@@ -1,28 +1,87 @@
 <!DOCTYPE html>
-
-<html lang="en">
-    <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale:1.0">
-<title>CSS Practise</title>
-<link rel="stylesheet" href="styles-practise.css">
-    </head>
+<!-- saved from url=(0063)http://127.0.0.1:5500/MARIO%20CARD%20ASSIGNMENT/mario-cart.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mario Club</title>
+  
+<link rel="stylesheet" href="./styles-practise_files/mario-cart-style.css"></head>
 <body>
+  <header><h1>Mario club</h1></header>
+  <section class="banner">
+    <img src="./styles-practise_files/banner.png" alt="mario club welcome banner" class="banner">
+    <div class="welcome">
 
-    <div>
-    <nav>
+        <h1>Welcome to<br>
+            <span>Mario club</span>
+        </h1>
+    </div>
+  </section>
+  <nav class="main-nav">
     <ul>
-        <li><a href="./index.html" target="_blank">Log in</a></li>
-        <li><a href="./styles-practise.html" target="_blank">Practise Page</a></li>
+        <li><a href="http://127.0.0.1:5500/MARIO%20CARD%20ASSIGNMENT/join.html" class="join">Join the club</a></li>
+        <li><a href="http://127.0.0.1:5500/MARIO%20CARD%20ASSIGNMENT/news.html">Latest news</a></li>
+        <li><a href="http://127.0.0.1:5500/MARIO%20CARD%20ASSIGNMENT/games.html">New games</a></li> 
+         <li><a href="http://127.0.0.1:5500/MARIO%20CARD%20ASSIGNMENT/contact.html">Contact</a></li>
     </ul>
-    </nav>
-</div>
+  </nav>
+  <main>
+    <article>
+        <h2>It's a me, Mario</h2>
+        <p>lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua obcaecati ipsa assumenda doloremque ipsam eos cupiditate libero fuga provident nemo architecto deserunt magnam praesentium natus impedit tenetur dolor pariatur suscipit ab sunt aspernatur vel ipsum necessitatibus voluptatum mollitia odio eligendi</p>
+    </article>
+    <ul class="images">
+    <li><img src="./styles-practise_files/thumb-1.png" alt="mario thumb 1"></li>
+     <li><img src="./styles-practise_files/thumb-2.png" alt="mario thumb 2"></li>
+    </ul>
+  </main>
+  <section class="join">
+    <h2>Join Today!</h2>
+    <p>Be the first to know about new games and exclusive offers!</p>
+    <form>
+        <input type="email" placeholder="Type email and hit enter!" required="">
+    </form>
+  </section>
+  <footer>
+    <p class="copyright">Copyright 2019 Mario Club.</p>
+  </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
-    <div>
-    <h1>LEARNING EXTERNAL STYLING WITH NET NINJA</h1>
-    <p>I must be capable to style using external CSS by the end of this video.</p>
-</div>
-
-</body>
-
-</html>
+</body></html>
